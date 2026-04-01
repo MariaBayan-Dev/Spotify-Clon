@@ -1,2 +1,115 @@
 /*----FONT---*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*----COLORES---*/
+
+:root{
+    --color-primary: #121212;
+    --color-secondary: #ffffff;
+    --bg-nav: #000000;
+    --bg-input: #2a2a2a;
+    --color-text-secondary: #b3b3b3;
+    --color-text-primary: #ffffff;
+    --color-hover: #f0f0f0; 
+    --color-hover-text: #2b2b2b;
+    --font-family: 'Montserrat', sans-serif;
+    --color-accent: #1DB954;
+}
+
+
+/*----RESET----*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*---ESTILOS GLOBALES---*/
+
+body{
+    font-family: var(--font-family);
+}
+
+
+/*---ESTILOS NAV---*/
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-nav);
+    padding: 0.85rem 1.5rem;
+    gap: 1rem;
+}
+
+.search-container{
+    width: 30%;
+    max-width: 400px;
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--bg-input);
+    border-radius: 3rem;
+}
+
+.search-container input{
+    max-width: 300px;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0.5rem 0;
+}
+
+.search-container input::placeholder{
+    font-family: var(--font-family);
+    font-size: 0.85rem;
+}
+
+.search-container button{
+    border: none;
+    background: none;
+    color: var(--color-text-secondary);
+}
+
+.nav-container{
+    display: flex;
+    margin-left: auto;
+    gap: 1rem;
+}
+
+.nav-container ul{
+    display: flex;
+    gap: 1rem;
+    padding-right: 1rem;
+    list-style: none;
+    border-right: 1px solid var(--color-secondary);
+}
+
+.nav-container ul li a{
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+
+.btn-login{
+    border: none;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 0.85rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-app, .btn-register{
+    background: none;
+    border: none;
+    color: var(--color-text-secondary);
+    font-weight: bold;
+    font-size: 0.85rem;
+}
