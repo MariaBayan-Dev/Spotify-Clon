@@ -43,6 +43,31 @@ nav{
     gap: 1rem;
 }
 
+.logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    color: var(--color-secondary);
+}
+
+.btn-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-input);
+    color: var(--color-text-secondary);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.btn-home:hover{
+    color: var(--color-secondary);
+}
+
 .search-container{
     width: 30%;
     max-width: 400px;
@@ -68,12 +93,20 @@ nav{
 .search-container input::placeholder{
     font-family: var(--font-family);
     font-size: 0.85rem;
+    border-right: 1px solid var(--color-text-secondary);
+    color: var(--color-text-secondary);
 }
 
 .search-container button{
     border: none;
     background: none;
     color: var(--color-text-secondary);
+}
+
+.btn-explore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-container{
@@ -84,15 +117,23 @@ nav{
 
 .nav-container ul{
     display: flex;
+    align-items: center;
     gap: 1rem;
     padding-right: 1rem;
     list-style: none;
-    border-right: 1px solid var(--color-secondary);
+    border-right: 1px solid var(--color-text-secondary);
 }
 
 .nav-container ul li a{
+    display: inline-block;
     text-decoration: none;
-    color: var(--color-text-primary);
+    color: var(--color-text-secondary);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-container ul li a:hover{
+    color: var(--color-secondary);
+    transform: scale(1.1);
 }
 
 .btn-login{
@@ -106,10 +147,32 @@ nav{
     cursor: pointer;
 }
 
-.btn-app, .btn-register{
+.btn-app, 
+.btn-register{
     background: none;
     border: none;
     color: var(--color-text-secondary);
     font-weight: bold;
     font-size: 0.85rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.btn-app:hover, 
+.btn-register:hover{
+    color: var(--color-text-primary);
+}
+
+.btn-app{
+    display: flex;
+    align-items: center;
+    gap: 0.50rem;
+}
+
+.btn-app svg{
+    width: 30px;
+}
+
+.hamburguer-menu{
+    display: none;
 }
