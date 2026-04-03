@@ -335,9 +335,22 @@ main{
     color: var(--color-text-primary);
 }
 
-section header{
+.header-main{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+}
+
+.header-main a{
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: text-decoration;
+}
+
+.header-main a:hover{
+    text-decoration: underline;
 }
