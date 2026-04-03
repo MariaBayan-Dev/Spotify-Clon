@@ -286,16 +286,17 @@ footer a{
     text-decoration: none;
     color: var(--color-text-secondary);
     font-size: 0.75rem;
-    cursor: pointer;
 }
 
 .accent-cookie{
     color: var(--color-text-primary);
-    border-bottom: 1px solid transparent;
-    transition: border-bottom-color 0.3s ease;
+    transition: text-decoration;
+    cursor: pointer;
 }
 
-
+.accent-cookie:hover{
+    text-decoration: underline;
+}
 
 .btn-lenguage{
     display: flex;
@@ -322,7 +323,21 @@ footer a{
     transform: scale(1.1);
 }
 
+
 /*---ESTILOS MAIN---*/
 main{
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    padding: 1rem;
+    gap: 2.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+}
+
+section header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
 }
