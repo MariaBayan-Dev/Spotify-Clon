@@ -7,6 +7,7 @@
     --color-primary: #121212;
     --color-secondary: #ffffff;
     --bg-nav: #000000;
+    --bg-card: #242424;
     --bg-input: #2a2a2a;
     --color-text-secondary: #b3b3b3;
     --color-text-primary: #ffffff;
@@ -32,6 +33,11 @@ body{
     font-family: var(--font-family);
 }
 
+
+.layout{
+    display: flex;
+    height: calc(100vh - 64px);
+}
 
 /*---ESTILOS NAV---*/
 
@@ -175,4 +181,148 @@ nav{
 
 .hamburguer-menu{
     display: none;
+}
+
+
+/*----ESTILOS ASIDE---*/
+
+aside{
+    width: 280px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2.5rem;
+    overflow-y: auto;
+    color: var(--color-text-primary);
+    background-color: var(--color-primary);
+}
+
+.header-aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-aside h2{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.header-aside button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: var(--bg-input);
+    color: var(--color-text-secondary);
+    border-radius: 50%;
+    padding: 0.45rem;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.header-aside button:hover{
+    filter: brightness(1.2);
+}
+
+.header-aside svg{
+    width: 20px;
+    height: 20px;
+}
+
+.section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section-aside{
+    border-radius: 20px;
+    padding: 1.5rem;
+    background-color: var(--bg-card);
+}
+
+.section-aside h3{
+    font-size: 0.95rem;
+}
+
+.section-aside p{
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.section-aside button{
+    border: none;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 0.65rem 0.75rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.section-aside button:hover{
+    background-color: var(--color-hover);
+    transform: scale(1.1);
+}
+
+.section-aside h3,
+.section-aside p,
+.section-aside button{
+    margin-top: 0.70rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.accent-cookie{
+    color: var(--color-text-primary);
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+
+
+.btn-lenguage{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 0.5rem;
+    padding: 0.40rem 0.60rem;
+    border: 1px solid var(--color-secondary);
+    background-color: transparent;
+    border-radius: 20px;
+    color: var(--color-secondary);
+    cursor: pointer;
+    font-weight: 600;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.btn-lenguage svg{
+    width: 20px;
+    height: 20px;
+}
+
+.btn-lenguage:hover{
+    filter: brightness(1.1);
+    transform: scale(1.1);
+}
+
+/*---ESTILOS MAIN---*/
+main{
+    flex-grow: 1;
 }
