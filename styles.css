@@ -11,7 +11,8 @@
     --bg-input: #2a2a2a;
     --color-text-secondary: #b3b3b3;
     --color-text-primary: #ffffff;
-    --color-hover: #f0f0f0; 
+    --color-hover: #f0f0f0;
+    --color-hover-card: #1f1f1f;
     --color-hover-text: #2b2b2b;
     --font-family: 'Montserrat', sans-serif;
     --color-accent: #1DB954;
@@ -30,14 +31,26 @@
 /*---ESTILOS GLOBALES---*/
 
 body{
+    overflow: hidden;
     font-family: var(--font-family);
+    height: 100vh;
 }
-
 
 .layout{
     display: flex;
     height: calc(100vh - 64px);
+    overflow: hidden;
 }
+
+main{
+    overflow-y: auto;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
 
 /*---ESTILOS NAV---*/
 
@@ -325,10 +338,12 @@ footer a{
 
 
 /*---ESTILOS MAIN---*/
+
 main{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    overflow-y: auto;
     padding: 1rem;
     gap: 2.5rem;
     background-color: var(--color-primary);
@@ -339,7 +354,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    margin-bottom: 1rem
 }
 
 .header-main a{
@@ -354,3 +369,79 @@ main{
 .header-main a:hover{
     text-decoration: underline;
 }
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card{
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.card-img-container{
+    position: relative;
+}
+
+.card-img-container img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    background-color: var(--color-accent);
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: var(--color-hover-card);
+}
+
+.card:hover .btn-play{
+    opacity: 1;
+    transform: translateY(-4px);
+}
+
+.card h3{
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.card p{
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+}
+
+.card.card-artist img{
+    border-radius: 80%;
+}
+
+.card h3,
+.card p{
+    margin-top: 0.4rem;
+    transition: text-decoration;
+}
+
+.card h3:hover,
+.text-artist:hover{
+    text-decoration: underline;
+}
+
