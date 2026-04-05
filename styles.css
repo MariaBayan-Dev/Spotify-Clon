@@ -13,6 +13,7 @@
     --color-text-primary: #ffffff;
     --color-hover: #f0f0f0;
     --color-hover-card: #1f1f1f;
+    --color-hover-icon: #727272;
     --color-hover-text: #2b2b2b;
     --font-family: 'Montserrat', sans-serif;
     --color-accent: #1DB954;
@@ -289,19 +290,19 @@ aside{
     margin-top: 0.70rem;
 }
 
-footer{
+.footer-aside{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.95rem;
 }
 
-footer a{
+.footer-aside a{
     text-decoration: none;
     color: var(--color-text-secondary);
     font-size: 0.75rem;
 }
 
-.accent-cookie{
+.footer-aside .accent-cookie{
     color: var(--color-text-primary);
     transition: text-decoration;
     cursor: pointer;
@@ -447,11 +448,123 @@ main{
 
 /*-----FOOTER MAIN-----*/
 
+.footer-main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-top: 1px solid var(--color-text-secondary);
+    padding-bottom: 5rem;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 2rem 0 2rem;
+}
+
 .nav-footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    gap: 2rem;
+    background-color: transparent;
+    flex-grow: 1;
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-col h3{
+    font-size: 0.85rem;
+}
+
+.footer-col a{
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-size: 0.90rem;
+    transition: text-decoration;
+}
+
+.footer-col a:hover{
+    text-decoration: underline;
+}
+
+.social-links{
+    display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.75rem;
+}
+
+.social-links a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-input);
+    color: var(--color-text-primary);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover{
+    background-color: var(--color-hover-icon);
+}
+
+.social-links svg {
+    width: 20px;
+    height: 20px;
+}
+
+.copyrigth{
+    padding: 1.5rem 2rem;
+    border-top: 1px solid var(--color-secondary);
 }
 
 
+/*---BANNER COLORIDO---*/
+
+.banner-registro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(45deg, #af2896, #835cc1, #519bf5);
+    border-radius: 8px 8px 0 0;
+    padding: 1rem;
+}
+
+.banner-text h2{
+    font-size: 0.75rem;
+    color: var(--color-text-primary);
+}
+
+.banner-text p{
+    margin-top: 0.45rem;
+    font-size: 0.85rem;
+    color: var(--color-text-primary);
+}
+
+.banner-registro button{
+    border: none;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 0.85rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.banner-registro button:hover{
+    background-color: var(--color-hover);
+    transform: scale(1.1);
+}
