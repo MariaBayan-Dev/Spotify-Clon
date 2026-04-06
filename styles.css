@@ -622,7 +622,7 @@ main{
 
 /*---------------RESPONSIVE 768px----------------*/
 @media (max-width: 768px){
-    
+
 }
 
 
@@ -638,14 +638,27 @@ main{
         width: 30px;
         height: 30px;
     }
+
+    nav{
+        position: relative;
+    }
     
     .nav-container,
     .search-container{
         display: none;
     }
 
-    .nav-container.active{
-        display: block;
+    .nav-container.menu-abierto{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-nav);
+        padding: 1rem;
+        gap: 1rem;
+        z-index: 100;
     }
 
     .hamburguer-menu{
