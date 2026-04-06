@@ -233,6 +233,13 @@ nav{
     display: none;
 }
 
+.hamburguer-menu button{
+    border: none;
+    background: none;
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+
 
 /*----ESTILOS ASIDE---*/
 
@@ -610,4 +617,91 @@ main{
 .banner-registro button:hover{
     background-color: var(--color-hover);
     transform: scale(1.1);
+}
+
+
+/*---------------RESPONSIVE 768px----------------*/
+@media (max-width: 768px){
+    
+}
+
+
+/*---------------RESPONSIVE 480px----------------*/
+
+@media (max-width: 480px){
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-home{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .nav-container,
+    .search-container{
+        display: none;
+    }
+
+    .nav-container.active{
+        display: block;
+    }
+
+    .hamburguer-menu{
+        display: block;
+    }
+
+    aside{
+        display: none;
+    }
+
+    main{
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .layout{
+        flex-direction: column;
+    }
+
+    .hamburguer-menu{
+        margin-left: auto;
+    }
+
+    .footer-main,
+    .copyrigth{
+        border: none;
+    }
+    .nav-footer{
+        display: none;
+    }
+
+    .footer-top{
+        justify-content: center;
+    }
+
+    .copyrigth{
+        text-align: center;
+    }
+
+    .banner-text h2{
+        font-size: 0.7rem;
+    }
+
+    .banner-text p{
+        font-size: 0.75rem;
+    }
+
+    .banner-registro button{
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        align-self: flex-end;
+    }
+
+    .banner-registro{
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0.75rem 1rem;
+    }
 }
