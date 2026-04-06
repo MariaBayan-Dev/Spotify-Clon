@@ -126,6 +126,15 @@ nav{
     color: var(--color-text-secondary);
 }
 
+.search-container input:focus{
+    outline: none;
+}
+
+.search-container:focus-within{
+    outline: 2px solid var(--color-text-primary);
+    outline-offset: 2px;
+}
+
 .search-container button{
     border: none;
     background: none;
@@ -137,6 +146,10 @@ nav{
 .search-container button:hover{
     transform: scale(1.1);
     filter: brightness(1.2);
+}
+
+.search-container button:focus{
+    outline: none;
 }
 
 .btn-explore{
