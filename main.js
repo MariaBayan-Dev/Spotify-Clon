@@ -1,4 +1,4 @@
-const btnHamburguesa = document.querySelector('.hamburguer-menu')
+const btnHamburguesa = document.querySelector('.hamburguer-menu button')
 const navContainer = document.querySelector('.nav-container')
 
 btnHamburguesa.addEventListener('click', () => {

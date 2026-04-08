@@ -633,10 +633,6 @@ main{
         max-width: 400px;
     }
 
-    .nav-container ul{
-        display: none;
-    }
-
     .hamburguer-menu{
         display: block;
     }
@@ -686,7 +682,6 @@ main{
         position: relative;
     }
     
-    .nav-container,
     .search-container{
         display: none;
     }
