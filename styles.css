@@ -686,17 +686,35 @@ main{
         display: none;
     }
 
+    .nav-container{
+        display: none;
+    }
+
     .nav-container.menu-abierto{
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
         position: absolute;
-        top: 60px;
+        top: 40px;
         left: 0;
         width: 100%;
-        background-color: var(--bg-nav);
         padding: 1rem;
         gap: 1rem;
         z-index: 100;
+    }
+
+    .nav-container.nav-container.menu-abierto ul{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--color-text-primary);
+        padding: 1rem;
+        gap: 1rem;
+        border: none;
+        border-radius: 10px;
+        width: 40%;
+        background-color: var(--bg-card);
     }
 
     .hamburguer-menu{
