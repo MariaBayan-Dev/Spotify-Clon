@@ -32,6 +32,3 @@ A web project to display a Spotify clone built without frameworks and using vani
 ## 📸 Preview
 
 <img width="1887" height="912" alt="spotify-clon-preview" src="https://github.com/user-attachments/assets/739d435f-d03d-4087-91e0-985a5e0e47f1" />
-
-
-
