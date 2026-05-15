@@ -27,8 +27,11 @@ A web project to display a Spotify clone built without frameworks and using vani
 - Rewrite the code using React.
 
 ## 🔗 Live Demo
-👉 [Anime List](https://mariabayan-dev.github.io/Anime-List/)
+👉 [Spotify Clone](https://mariabayan-dev.github.io/Spotify-Clon/)
 
 ## 📸 Preview
+
+<img width="1887" height="912" alt="spotify-clon-preview" src="https://github.com/user-attachments/assets/739d435f-d03d-4087-91e0-985a5e0e47f1" />
+
 
 
