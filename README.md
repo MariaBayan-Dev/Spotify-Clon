@@ -23,7 +23,7 @@ A web project to display a Spotify clone built without frameworks and using vani
 - Managing responsive breakpoints and a hamburger menu from scratch 
   revealed the complexity that frameworks usually abstract away.
 
-##🔮 Future Improvements
+## 🔮 Future Improvements
 
 - In the “Show All” section, display the list of songs or artists.
 - When clicking on a song, open that song’s page.
